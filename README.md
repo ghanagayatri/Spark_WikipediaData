@@ -6,12 +6,12 @@ Used Spark + Scala on my local machine to do the processing.
 ### Start and Stop Spark:
   1. from the spark folder do the following start Spark Master and slaves:
 
-  ./sbin/start-master.sh --ip 127.0.0.1 --host 127.0.0.1
-  ./sbin/start-slave.sh spark://localhost:7077 --port 7070 --ip localhost
+      ./sbin/start-master.sh --ip 127.0.0.1 --host 127.0.0.1
+      ./sbin/start-slave.sh spark://localhost:7077 --port 7070 --ip localhost
 
   2. To stop the Spark Cluster
-     ./sbin/stop-master.sh 
-     ./sbin/stop-slave.sh 
+       ./sbin/stop-master.sh 
+       ./sbin/stop-slave.sh 
   
   3. Spark Web UI
     http://127.0.0.1:8080/
@@ -36,7 +36,7 @@ http://alaska.epfl.ch/~dockermoocs/bigdata/wikipedia.dat
 
 ### Output:
 
-Processing Part 1: naive ranking took 19896 ms.
-Processing Part 2: ranking using inverted index took 10993 ms.
-Processing Part 3: ranking using reduceByKey took 4496 ms.
+  1. Processing Part 1: naive ranking took 19896 ms.
+  2. Processing Part 2: ranking using inverted index took 10993 ms.
+  3. Processing Part 3: ranking using reduceByKey took 4496 ms.
 
